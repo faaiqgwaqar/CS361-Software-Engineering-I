@@ -1,0 +1,36 @@
+<h1>The Jobs You've Posted</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Job ID</th>
+            <th>Date Posted</th>
+            <th>Title</th>
+            <th>Category ID</th>
+            <th>Date of Job</th>
+            <th>Location</th>
+            <th>Details</th>
+            <th>Emp ID</th>
+            <th>Owner Rating</th>
+            <th>Rating Details</th>
+			<th>View Bids</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#each jobs}}
+			<tr>
+				<td>{{jobId}}</td>
+				<td>{{printDate jobPostedDate}}</td>
+				<td>{{jobTitle}}</td>
+				<td>{{categoryId}}</td>
+				<td>{{printDate jobExpectedCompletionDate}}</td>
+				<td>{{location}}</td>
+				<td>{{jobDetails}}</td>
+				<td>{{employeeId}}</td>
+				<td>{{rating}}</td>
+				<td>{{ratingDetails}}</td>
+				<td><a href="/view-bids/{{jobId}}">View Bids</a></td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>

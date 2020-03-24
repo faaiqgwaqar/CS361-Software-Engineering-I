@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskBunny</title>
+    <link rel="stylesheet" href="/static/assets/css/styles.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navigationBar">
+        <a class="topLevelLink" id="homeIcon" href="/home">TaskBunny</a>
+        <div class="dropDownContainer">
+            <div class="dropDownHeader">Navigation</div>
+            <div class="dropDownContent">
+                <a href="/view-jobs">View Posted Jobs</a>
+                <a href="/submit-job">Post a Job</a>
+				<a href="/review">Review a Worker</a>
+                <a href="/your-jobs">View Your Posted Jobs</a>
+            </div>
+        </div>
+    </div>
+
+    {{! Page Content }}
+    <div style="padding:20px;margin-top:10px;">
+        {{{body}}}
+    </div>
+
+<img src="logo.png">
+
+</body>
+</html>
